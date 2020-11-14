@@ -12,11 +12,6 @@ import React from 'react';
 import {StyleSheet, View, Text, Button, FlatList} from 'react-native';
 
 const App = () => {
-  const addEntry = () => {
-    //console.log('eita');
-    alert('Abrir tela de acicionar lançamento!');
-  };
-
   return (
     <View style={{padding: 10}}>
       <Text
@@ -28,7 +23,6 @@ const App = () => {
         }}>
         Saldo: $2.102,45
       </Text>
-      <Button onPress={addEntry} title="Adicionar" />
 
       <Text
         style={{
