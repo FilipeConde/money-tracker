@@ -4,6 +4,7 @@ import {View, Text, StyleSheet, FlatList} from 'react-native';
 export default function EntrySummaryList() {
   return (
     <View style={styles.container}>
+      <Text style={styles.label}>Categorias</Text>
       <FlatList
         data={[
           {key: 'Alimentação: $200'},
@@ -21,5 +22,9 @@ export default function EntrySummaryList() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  label: {
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
