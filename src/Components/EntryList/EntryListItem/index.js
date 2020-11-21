@@ -19,7 +19,7 @@ export default function EntryListItem() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    //flex: 1,
   },
   label: {
     fontSize: 18,

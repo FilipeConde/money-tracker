@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Picker} from 'react-native';
+import {View, Text, StyleSheet, Picker, Button} from 'react-native';
 
 import BalanceLabel from '../../Components/BalanceLabel';
 import EntrySummary from '../../Components/EntrySummary';
@@ -19,6 +19,10 @@ export default function Report() {
       </View>
       <EntrySummary />
       <EntryList />
+      <View>
+        <Button title="Salvar"></Button>
+        <Button title="Fechar"></Button>
+      </View>
     </View>
   );
 }
