@@ -3,7 +3,7 @@ import {View, StyleSheet, Button} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import BalanceLabel from '../../Components/BalanceLabel';
 
-export default function NewEntry() {
+export default function NewEntry({navigation}) {
   return (
     <View style={styles.container}>
       <BalanceLabel />
@@ -16,7 +16,7 @@ export default function NewEntry() {
       </View>
       <View>
         <Button title="Adicionar" />
-        <Button title="Cancelar" />
+        <Button title="Cancelar" onPress={() => navigation.goBack()} />
       </View>
     </View>
   );
