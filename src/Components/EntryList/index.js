@@ -2,10 +2,10 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import EntryListItem from './EntryListItem';
 
-export default function EntryList() {
+export default function EntryList({entries}) {
   return (
     <View style={styles.container}>
-      <EntryListItem />
+      <EntryListItem entries={entries} />
     </View>
   );
 }

@@ -4,9 +4,11 @@ import {TextInput} from 'react-native-gesture-handler';
 import BalanceLabel from '../../Components/BalanceLabel';
 
 export default function NewEntry({navigation}) {
+  const currentBalance = '2.035,12';
+
   return (
     <View style={styles.container}>
-      <BalanceLabel />
+      <BalanceLabel currentBalance={currentBalance} />
 
       <View>
         <TextInput style={styles.input}></TextInput>

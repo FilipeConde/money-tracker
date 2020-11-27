@@ -3,15 +3,10 @@ import {View, StyleSheet, Button} from 'react-native';
 import BalancePanelLabel from './BalancePanelLabel';
 import BalancePanelChart from './BalancePanelChart';
 
-export default function BalancePanel() {
-  const addEntry = () => {
-    //console.log('eita');
-    alert('Abrir tela de acicionar lançamento!');
-  };
-
+export default function BalancePanel({currentBalance}) {
   return (
     <View style={styles.container}>
-      <BalancePanelLabel />
+      <BalancePanelLabel currentBalance={currentBalance} />
       <BalancePanelChart />
     </View>
   );

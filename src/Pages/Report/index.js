@@ -6,9 +6,11 @@ import EntrySummary from '../../Components/EntrySummary';
 import EntryList from '../../Components/EntryList';
 
 export default function Report() {
+  const currentBalance = '2.035,12';
+
   return (
     <View style={styles.container}>
-      <BalanceLabel />
+      <BalanceLabel currentBalance={currentBalance} />
       <View>
         <Picker>
           <Picker.Item label="Todas categorias" />
