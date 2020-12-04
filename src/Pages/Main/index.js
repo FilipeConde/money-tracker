@@ -3,9 +3,15 @@ import {View, Button, StyleSheet} from 'react-native';
 import BalancePanel from '../../Components/BalancePanel';
 import EntrySummary from '../../Components/EntrySummary';
 import EntryList from '../../Components/EntryList';
+import {saveEntry} from '../../services/Entries';
 
 const Main = ({navigation}) => {
   const saldo = '2.064,34';
+  // () => navigation.navigate('NewEntry')
+
+  const save = () => {
+    console.log(JSON.stringify(saveEntry()));
+  };
 
   const entriesGrouped = [
     {key: '1', description: 'Alimentação', amount: '$200'},
@@ -23,10 +29,7 @@ const Main = ({navigation}) => {
   return (
     <View style={styles.container}>
       <BalancePanel currentBalance={saldo} />
-      <Button
-        onPress={() => navigation.navigate('NewEntry')}
-        title="Adicionar"
-      />
+      <Button onPress={save} title="Adicionar" />
 
       <EntrySummary entriesGrouped={entriesGrouped} />
       <EntryList entries={entries} />
