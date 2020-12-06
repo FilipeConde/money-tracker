@@ -9,7 +9,7 @@ const CategorySchema = {
     isCredit: {type: 'bool', default: 'false'},
     isDebit: {type: 'bool', default: 'false'},
     order: {type: 'int', default: 0},
-    entries: 'Entry[]',
+    //entries: 'Entry[]',
   },
 };
 
